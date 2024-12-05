@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">TestSpike</string>
+  <string name="app_name">TestSpike</string>
+  <string name="first_screen_description">First Screen</string>
+  <string name="second_screen_description">Second Screen</string>
+  <string name="third_screen_description">Third Screen</string>
+  <string name="navigate_to_second_screen">Click for Second Screen</string>
+  <string name="navigate_to_third_screen">Click for Third Screen</string>
+  <string name="button_show_details">Show Details</string>
+  <string name="second_screen_detail_text">Description text for the Second Screen</string>
 </resources>
