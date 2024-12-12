@@ -37,6 +37,29 @@ android {
     buildFeatures {
         compose = true
     }
+
+    testOptions {
+        managedDevices {
+            localDevices {
+                create("pixel2api30") {
+                    device = "Pixel 2"
+                    apiLevel = 30
+                    systemImageSource = "aosp"
+                }
+                create("pixelTabletapi30") {
+                    device = "Pixel Tablet"
+                    apiLevel = 30
+                    systemImageSource = "aosp"
+                }
+            }
+            groups {
+                create("phoneAndTablet") {
+                    targetDevices.add(devices["pixel2api30"])
+                    targetDevices.add(devices["pixelTabletapi30"])
+                }
+            }
+        }
+    }
 }
 
 dependencies {
